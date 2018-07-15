@@ -13,7 +13,7 @@ if (process.argv.length === 3) {
       const vtbuf = binarian.convert(
         json, zxy[0], zxy[1], zxy[2], 'polygon'
       )
-      console.log(vtbuf)
+      // console.log(vtbuf)
       const vt = new VectorTile(new Pbf(vtbuf))
       console.log(JSON.stringify(vt))
     })

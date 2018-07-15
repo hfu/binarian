@@ -3,7 +3,7 @@ convert a single GeoJSON vector tile into a single vector-tile-spec vector tile,
 
 # usage
 ```console
-$ node index.js some/2/3/1.geojson
+$ node index.js https://cyberjapandata.gsi.go.jp/xyz/experimental_landformclassification1/14/14555/6446.geojson
 ```
 
 # future plan

@@ -16,5 +16,8 @@ if (process.argv.length === 3) {
       // console.log(vtbuf)
       const vt = new VectorTile(new Pbf(vtbuf))
       console.log(JSON.stringify(vt))
+      const jsonSize = JSON.stringify(json).length
+      const vtSize = vtbuf.length
+      console.log(`${jsonSize} -> ${vtSize} (${Math.round(100.0 * vtSize / jsonSize)}%)`)
     })
 }

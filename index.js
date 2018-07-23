@@ -11,11 +11,11 @@ if (process.argv.length === 3) {
     .then(res => res.json())
     .then(json => {
       const vtbuf = binarian.convert(
-        json, zxy[0], zxy[1], zxy[2], 'polygon'
+        json, zxy[0], zxy[1], zxy[2]
       )
-      // console.log(vtbuf)
+console.log(vtbuf)
       const vt = new VectorTile(new Pbf(vtbuf))
-      console.log(JSON.stringify(vt))
+      //console.log(vt)
       const jsonSize = JSON.stringify(json).length
       const vtSize = vtbuf.length
       console.log(`${jsonSize} -> ${vtSize} (${Math.round(100.0 * vtSize / jsonSize)}%)`)
